@@ -1,6 +1,7 @@
 import { Target, Eye, Users } from 'lucide-react'
 import PageHero from '../components/PageHero.tsx'
 import Team from '../components/Team.tsx'
+import distribution from '../src/assets/distribution.jpg'
 
 const values = [
   { icon: <Target size={22} className="text-primary-600" />, title: 'Our Mission', desc: 'To become a leading integrated financial ecosystem that connects technology, banking, and investment to empower people and businesses.' },
@@ -86,7 +87,7 @@ export default function AboutPage(): JSX.Element {
   <div className="relative">
     <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary-600/20 aspect-[4/3]">
       <img
-        src="/images/distribution.jpg"
+        src={distribution}
         alt="SmartPay Finance"
         className="w-full h-full object-cover"
       />
